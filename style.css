@@ -1,0 +1,155 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+/* common */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1st stage styling */
+
+.intro-banner {
+  background-color: #334257;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page-title {
+  margin-top: 122px;
+  margin-left: 156px;
+  margin-bottom: 169px;
+}
+.page-title h1 {
+  color: #eeeeee;
+  font-size: 64px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.page-title a {
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  font-weight: 500;
+}
+
+.logo {
+  margin: 53px 100px 86px 102px;
+}
+.logo img {
+  width: 440px;
+}
+
+/* 2nd stage of the page styling (introducing the players) */
+
+.players {
+  background-color: #eeeeee;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+  padding-top: 170px;
+  padding-bottom: 30px;
+}
+
+.player-info {
+  box-shadow: 0 0 30px gray;
+  border: 1px solid #808080be;
+  background-color: #476072;
+  padding: 16px;
+}
+.player-info.manager {
+  background-color: #797d80;
+}
+
+.player-image img {
+  width: 300px;
+}
+
+.player-details {
+  width: 290px;
+}
+.player-details p {
+  color: #c4c4c4;
+  font-size: 16px;
+  padding-right: 10px;
+}
+.player-details span {
+  color: rgb(235, 248, 178);
+  font-weight: 700;
+  font-size: 20px;
+}
+.name {
+  color: #eeeeee;
+  font-size: 28px;
+}
+
+/* footer stage styling */
+
+.foot {
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 0.2fr;
+  justify-items: center;
+  padding-top: 53px;
+}
+
+.sponsor img {
+  width: 480px;
+  margin: 0 30px 20px 0px;
+}
+
+.social {
+  width: 170px;
+}
+
+.social img {
+  width: 32px;
+}
+
+/* queries */
+
+@media only screen and (max-width: 688px) {
+  body {
+    width: 100%;
+  }
+
+  .intro-banner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .intro-banner .page-title {
+    margin-left: 16px;
+    margin-bottom: 0px;
+  }
+  .intro-banner .logo {
+    margin-left: 0px;
+  }
+  .intro-banner .logo img {
+    width: 350px;
+    margin-left: 16px;
+  }
+
+  .players {
+    padding-top: 47px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+  }
+
+  .foot {
+    justify-items: center;
+  }
+
+  .sponsor img {
+    width: 250px;
+  }
+}
